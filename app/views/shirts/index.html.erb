@@ -3,5 +3,6 @@
 <ul>
 	<% @shirts.each do |shirt| %>
 		<li><%= shirt.name %></li>
+		<%= image_tag shirt.image %>
 	<% end %>
 <ul>
