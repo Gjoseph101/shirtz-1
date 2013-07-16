@@ -1,5 +1,5 @@
 class ShirtsController < ApplicationController
 	def index
-		@shirts = Shirt.where("name LIKE :query", query: params[:query])
+		@shirts = Shirt.search_for(params[:query])
 	end
 end
